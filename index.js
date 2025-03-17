@@ -11,7 +11,7 @@ app.get('/youtube', (req, res) => {
   res.send('login here for yt')
 })
 app.get('/twitter', (req, res) => {
-  res.send("<h2>hello twitter</h2>")
+  res.send("<h2>hello 2git  twitter</h2>")
 })
 
 app.listen(process.env.PORT, () => {
