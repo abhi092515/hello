@@ -17,3 +17,39 @@ app.get('/twitter', (req, res) => {
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+
+// Data types
+
+`let name = "name"
+let age = 12
+let gender = "male"
+let state = "delhi"`
+
+//Objects
+
+`const user = {
+name : "raghav",
+gender: 'male',
+age: 18
+}`
+
+//Array of objects
+
+`const users = [`
+`{
+name : "raghav",
+gender: 'male',
+age: 18
+},
+{
+name : "abhishek",
+gender: 'male',
+age: 18
+},
+{
+name : "user3",
+gender: 'female',
+age: 18
+},
+]`
