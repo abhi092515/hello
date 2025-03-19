@@ -65,7 +65,7 @@ function checkVotingEligibility() {
 }
 checkVotingEligibility()
 
-Implement a function calculateTotalSpentByCategory which takes a list of transactions as parameter
+//Implement a function calculateTotalSpentByCategory which takes a list of transactions as parameter
 and return a list of objects where each object is unique category-wise and has total price spent as its value.
 transactions is an array where each
 function checktotalprice() {
@@ -115,14 +115,25 @@ for(let i = 0; i < allentries.length; i++){
 }
 console.log(finalOutput)
 
-/* allentries.forEach(item => {
+ allentries.forEach(item => {
    const newObj = {
     category: item[0],
     totalSpent: item[1]
   }
   finalOutput.push(newObj)
 })
-console.log(finalOutput, 'finalOutput')
-} */
+function customCalci(a, b, operation) {
+  return operation(a, b)
 }
-checktotalprice()
+const add = (a,b) => a + b
+const addition = customCalci(4,5 ,add)
+const sub = (a,b) => a- b
+const subtraction = customCalci(4,5 ,sub)
+const mul = (a, b) => a*b
+const multiply= customCalci(4,2 ,mul)
+const div= (a,b) => a/ b
+const divide= customCalci(14,2 ,div)
+console.log(addition)
+console.log(subtraction)
+console.log(multiply)
+console.log(divide)
