@@ -64,3 +64,65 @@ function checkVotingEligibility() {
   })
 }
 checkVotingEligibility()
+
+Implement a function calculateTotalSpentByCategory which takes a list of transactions as parameter
+and return a list of objects where each object is unique category-wise and has total price spent as its value.
+transactions is an array where each
+function checktotalprice() {
+  let items = [
+    {
+      id: 1,
+      timestamp: 1656076800000,
+      price: 10,
+      category: "Food",
+      itemName: "Pizza",
+    },
+    {
+      id: 2,
+      timestamp: 1656076810000,
+      price: 20,
+      category: "Food",
+      itemName: "Pasta",
+    },
+    {
+      id: 3,
+      timestamp: 1656076800000,
+      price: 5,
+      category: "Grocery",
+      itemName: "Biscuit",
+    },
+  ]
+
+  const result = []
+  const finalCategory = {}
+
+  items.forEach(({ category, price }) => {
+    if (!finalCategory[category]) {
+      finalCategory[category] = 0
+    }
+    finalCategory[category] += price
+  })
+let allentries = Object.entries(finalCategory);
+const finalOutput = []
+console.log(allentries)
+for(let i = 0; i < allentries.length; i++){
+	let item = allentries[i]
+  const newObj = {
+  	category: item[0],
+    totalSpent: item[1]
+  }
+  finalOutput.push(newObj)
+}
+console.log(finalOutput)
+
+/* allentries.forEach(item => {
+   const newObj = {
+    category: item[0],
+    totalSpent: item[1]
+  }
+  finalOutput.push(newObj)
+})
+console.log(finalOutput, 'finalOutput')
+} */
+}
+checktotalprice()
