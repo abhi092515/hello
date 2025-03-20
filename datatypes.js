@@ -66,8 +66,8 @@ function checkVotingEligibility() {
 checkVotingEligibility()
 
 //Implement a function calculateTotalSpentByCategory which takes a list of transactions as parameter
-and return a list of objects where each object is unique category-wise and has total price spent as its value.
-transactions is an array where each
+//and return a list of objects where each object is unique category-wise and has total price spent as its value.
+//transactions is an array where each
 function checktotalprice() {
   let items = [
     {
@@ -122,18 +122,3 @@ console.log(finalOutput)
   }
   finalOutput.push(newObj)
 })
-function customCalci(a, b, operation) {
-  return operation(a, b)
-}
-const add = (a,b) => a + b
-const addition = customCalci(4,5 ,add)
-const sub = (a,b) => a- b
-const subtraction = customCalci(4,5 ,sub)
-const mul = (a, b) => a*b
-const multiply= customCalci(4,2 ,mul)
-const div= (a,b) => a/ b
-const divide= customCalci(14,2 ,div)
-console.log(addition)
-console.log(subtraction)
-console.log(multiply)
-console.log(divide)
